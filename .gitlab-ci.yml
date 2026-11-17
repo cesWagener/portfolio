@@ -3,6 +3,10 @@ stages:
 
 sync:
   stage: sync
+  variables:
+    GIT_DEPTH: 0
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
   script:
-    - git remote add github git@github.com:cesWagener/portfolio.git
-    - git push github master
+    - git remote add github https://cesWagener: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@github.com/cesWagener/portfolio.git 
+    - git push github HEAD:refs/heads/main
