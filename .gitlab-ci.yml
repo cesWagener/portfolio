@@ -1,0 +1,8 @@
+stages:
+  - sync
+
+sync:
+  stage: sync
+  script:
+    - git remote add github https://github.com/cesWagener/portfolio
+    - git push github master
