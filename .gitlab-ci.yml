@@ -4,5 +4,5 @@ stages:
 sync:
   stage: sync
   script:
-    - git remote add github https://github.com/cesWagener/portfolio
+    - git remote add github git@github.com:cesWagener/portfolio.git
     - git push github master
