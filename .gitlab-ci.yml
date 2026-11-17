@@ -8,5 +8,5 @@ sync:
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
   script:
-    - git remote add github https://cesWagener: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@github.com/cesWagener/portfolio.git 
+    - git remote add github https://cesWagener:${GITHUB_TOKEN}@github.com/cesWagener/portfolio.git 
     - git push github HEAD:refs/heads/main
